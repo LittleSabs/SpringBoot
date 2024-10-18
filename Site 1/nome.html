@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>springboot</title>
+</head>
+<body>
+<style>
+    body {
+    background-color: #f8e0f3;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 20px 0;
+    }
+    h1 {
+        color: #ff66b2;
+        font-family: 'fantasy', 'papyrus';
+        font-size: xxx-large;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .second-title {
+        display: flex;
+        margin-top: 20px;
+    }
+    #conteiner{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+</style>
+<div id="conteiner">
+    <h1>Olá :D ,</h1>
+    <div class="separator"></div>
+    <h1 class="second-title" th:text="${textoRecebido}"></h1>
+</div>
+</body>
+</html>
